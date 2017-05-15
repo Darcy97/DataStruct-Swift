@@ -9,11 +9,11 @@
 import Foundation
 
 class BinaryTreeNote {
-    var data: Int
+    var data: String
     var leftChild: BinaryTreeNote!    //左节点指针
     var rightChild: BinaryTreeNote!   //右节点指针
     
-    init(data: Int) {
+    init(data: String) {
         self.data = data
     }
     
@@ -38,10 +38,10 @@ class SearchResult {
 class BinarySearchTree {
     var rootNote: BinaryTreeNote?
     
-    fileprivate var items: Array<Int>
+    fileprivate var items: Array<String>
     fileprivate var index = -1
     
-    init(items: Array<Int>) {
+    init(items: Array<String>) {
         self.items = items
         createBinarySearchTree()
     }
@@ -68,7 +68,7 @@ class BinarySearchTree {
     ///
     /// - returns:返回查找的结果对象
     func searchBST(currentRoot: BinaryTreeNote?,
-                   faterNote: BinaryTreeNote?, key: Int) -> SearchResult {
+                   faterNote: BinaryTreeNote?, key: String) -> SearchResult {
         let searchResult = SearchResult()
         
         //查找失败, 返回该节点的父类节点
@@ -101,7 +101,7 @@ class BinarySearchTree {
     ///
     /// - parameter faterNote: 插入节点的父节点
     /// - parameter key: 插入的数据
-    func insertNote(faterNote: BinaryTreeNote?, key: Int) {
+    func insertNote(faterNote: BinaryTreeNote?, key: String) {
         let note = BinaryTreeNote(data: key)
         if faterNote == nil { //创建根节点
             rootNote = note
@@ -115,7 +115,7 @@ class BinarySearchTree {
         }
     }
     
-    func deleteNote(key: Int) {
+    func deleteNote(key: String) {
         print("要删除的值为：\(key)")
         let searchResult = searchBST(currentRoot: rootNote, faterNote: nil, key: key)
         deleteNote(searchResult: searchResult)

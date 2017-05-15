@@ -5,11 +5,13 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "59B0DD3A0DC0B86D2A06DD4B68CBD1C997876614" : 9223372036854775807,
+    "B6B75B1058B4AC928587E16DEB3E88E3C718EA91" : 9223372036854775807,
     "E7A756F2ADE94DB0438E6A23DD265E5524A99FEE" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FFDA011B-E3E5-4FE7-9B56-165700560B58",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "59B0DD3A0DC0B86D2A06DD4B68CBD1C997876614" : "",
+    "B6B75B1058B4AC928587E16DEB3E88E3C718EA91" : "..",
     "E7A756F2ADE94DB0438E6A23DD265E5524A99FEE" : "DataStruct-Swift\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "BinarySearchTree",
@@ -20,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lizelu\/CollectionViewControllerDemo.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "59B0DD3A0DC0B86D2A06DD4B68CBD1C997876614"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Darcy97\/DataStructureHomeWork.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B6B75B1058B4AC928587E16DEB3E88E3C718EA91"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lizelu\/DataStruct-Swift.git",

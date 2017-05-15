@@ -8,20 +8,49 @@
 
 import Foundation
 
-let searchTable: Array<Int> = [62, 88, 58, 47, 62, 35, 73, 51, 99, 37, 93]
-let binarySearchTree = BinarySearchTree(items: searchTable)
+var searchTable: Array<String> = []
 
-binarySearchTree.deleteNote(key: 99)
-binarySearchTree.inOrderTraverse()
+func getPhrase(){
+    
+    let input = getInput()
+    
+    searchTable.append(input)
+    
+    switch input {
+    case "end":
+        break
+    default:
+        getPhrase()
+        break
+    }    
+    
+}
 
-binarySearchTree.deleteNote(key: 35)
-binarySearchTree.inOrderTraverse()
+func main(){
+    
+    getPhrase()
+    
+    let binarySearchTree = BinarySearchTree(items: searchTable)
+    binarySearchTree.inOrderTraverse()
+}
 
-binarySearchTree.deleteNote(key: 37)
-binarySearchTree.inOrderTraverse()
+main()
 
-binarySearchTree.deleteNote(key: 62)
-binarySearchTree.inOrderTraverse()
+
+//let searchTable: Array<Int> = [62, 88, 58, 47, 62, 35, 73, 51, 99, 37, 93]
+
+
+//binarySearchTree.deleteNote(key: 99)
+//binarySearchTree.inOrderTraverse()
+
+//binarySearchTree.deleteNote(key: 35)
+//binarySearchTree.inOrderTraverse()
+
+//binarySearchTree.deleteNote(key: 37)
+//binarySearchTree.inOrderTraverse()
+
+//binarySearchTree.deleteNote(key: 62)
+//binarySearchTree.inOrderTraverse()
 
 
 
